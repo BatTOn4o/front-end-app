@@ -39,7 +39,8 @@ export default function () {
     }
 
     return (
-        <div>
+        <div className='login-page'>
+            <div className='login-container'>
             <input type={'text'} value={username} onChange={e => setUsername(e.target.value)} />
             <br />
             <br />
@@ -47,6 +48,7 @@ export default function () {
             <br />
             <br />
             <button onClick={login}>Login</button>
+            </div>
         </div>
     )
 }
