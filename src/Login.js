@@ -16,11 +16,11 @@ export default function () {
 
     function login() {
 
-        fetch(baseURL + '/users/generate-token', {
+        fetch(baseURL + '/users/generate-token' , {
             method: 'GET',
             headers: {
                 name: username,
-                pass: password
+                pass: password,
             }
         }).then(res => res.json())
 
